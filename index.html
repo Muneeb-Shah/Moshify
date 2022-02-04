@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
         <nav class="nav collapsible">
-            <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
+            <a class="nav__brand" href="/" data-aos="zoom-in"><img src="images/logo.svg" alt=""></a>
             <svg class="icon icon--white nav__toggler">
                 <use xlink:href="images/sprite.svg#menu"></use>
             </svg>
-            <ul class="list nav__list collapsible__content">
+            <ul class="list nav__list collapsible__content" data-aos="fade-left">
                 <li class="nav__item"><a href="">Hosting</a></li>
                 <li class="nav__item"><a href="">VPS</a></li>
                 <li class="nav__item"><a href="">Domain</a></li>
@@ -33,12 +34,12 @@
     <!-- HERO -->
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
-            <header class="block__header hero__content">
+            <header class="block__header hero__content" data-aos="fade-right">
                 <h1 class="block__heading">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your websites in less than 60s.</p>
                 <a href="" class="btn btn--accent btn--stetched">Get Started</a>
             </header>
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
                 <source type="image/webp" srcset="images/banner.png 1x, images/banner@2x.png 2x">
                 <img class="hero__image" src="images/banner.png" alt="">
@@ -48,19 +49,19 @@
     <!-- end of HERO -->
 
     <!-- DOMAIN BLOCK -->
-    <section class="block container block-domain">
-        <header class="block__header">
-            <h2>Starting at $9 per month</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam veniam quas ullam voluptatem labore beatae sequi ab porro ad.</p>
+    <section class="block container block-domain" data-aos="zoom-in">
+        <header class=" block__header " ">
+        <h2>Starting at $9 per month</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam veniam quas ullam voluptatem labore beatae sequi ab porro ad.</p>
         </header>
-        <div class="input-group">
-            <input type="text" class="input" placeholder="Enter domain name here">
-            <button class="btn btn--accent"><svg class="icon icon--white">
-                <use xlink:href="images/sprite.svg#search"></use>
+        <div class=" input-group ">
+            <input type="text " class="input " placeholder="Enter domain name here ">
+            <button class="btn btn--accent "><svg class="icon icon--white ">
+                <use xlink:href="images/sprite.svg#search "></use>
             </svg>Search</button>
         </div>
-        <ul class="list block-domain__prices">
-            <li><span class="badge badge--secondary">.com $9</span></li>
+        <ul class="list block-domain__prices ">
+            <li><span class="badge badge--secondary ">.com $9</span></li>
             <li>.sg $10</li>
             <li>.space $11</li>
             <li>.info $14</li>
@@ -71,65 +72,65 @@
     <!-- end of DOMAIN BLOCK -->
 
     <!-- PLANS BLOCK -->
-    <section class="block container block-plans">
-        <div class="grid grid--1x3">
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$15</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% OFF</span>
-                        <span class="plan__description">Easy start on the cloud</span>
+    <section class="block container block-plans " data-aos="zoom-in ">
+        <div class="grid grid--1x3 ">
+            <div class="plan ">
+                <div class="card card--secondary ">
+                    <header class="card__header ">
+                        <h3 class="plan__name ">Entry</h3>
+                        <span class="plan__price ">$15</span>
+                        <span class="plan__billing-cycle ">/month</span>
+                        <span class="badge badge--secondary badge--small ">10% OFF</span>
+                        <span class="plan__description ">Easy start on the cloud</span>
                     </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
+                    <div class="card__body ">
+                        <ul class="list list--tick ">
+                            <li class="list__item ">Unlimited Websites</li>
+                            <li class="list__item ">Unlimited Bandwidth</li>
+                            <li class="list__item ">100 GB SSD Storage</li>
+                            <li class="list__item ">3 GB RAM</li>
                         </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
+                        <button class="btn btn--outline btn--block ">Buy Now</button>
                     </div>
                 </div>
             </div>
-            <div class="plan plan--popular">
-                <div class="card card--primary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$15</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--primary badge--small">10% OFF</span>
-                        <span class="plan__description">Easy start on the cloud</span>
+            <div class="plan plan--popular ">
+                <div class="card card--primary ">
+                    <header class="card__header ">
+                        <h3 class="plan__name ">Entry</h3>
+                        <span class="plan__price ">$15</span>
+                        <span class="plan__billing-cycle ">/month</span>
+                        <span class="badge badge--primary badge--small ">10% OFF</span>
+                        <span class="plan__description ">Easy start on the cloud</span>
                     </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
+                    <div class="card__body ">
+                        <ul class="list list--tick ">
+                            <li class="list__item ">Unlimited Websites</li>
+                            <li class="list__item ">Unlimited Bandwidth</li>
+                            <li class="list__item ">100 GB SSD Storage</li>
+                            <li class="list__item ">3 GB RAM</li>
                         </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
+                        <button class="btn btn--outline btn--block ">Buy Now</button>
                     </div>
                 </div>
             </div>
-            <div class="plan">
-                <div class="card card--secondary">
-                    <header class="card__header">
-                        <h3 class="plan__name">Entry</h3>
-                        <span class="plan__price">$15</span>
-                        <span class="plan__billing-cycle">/month</span>
-                        <span class="badge badge--secondary badge--small">10% OFF</span>
-                        <span class="plan__description">Easy start on the cloud</span>
+            <div class="plan ">
+                <div class="card card--secondary ">
+                    <header class="card__header ">
+                        <h3 class="plan__name ">Entry</h3>
+                        <span class="plan__price ">$15</span>
+                        <span class="plan__billing-cycle ">/month</span>
+                        <span class="badge badge--secondary badge--small ">10% OFF</span>
+                        <span class="plan__description ">Easy start on the cloud</span>
                     </header>
-                    <div class="card__body">
-                        <ul class="list list--tick">
-                            <li class="list__item">Unlimited Websites</li>
-                            <li class="list__item">Unlimited Bandwidth</li>
-                            <li class="list__item">100 GB SSD Storage</li>
-                            <li class="list__item">3 GB RAM</li>
+                    <div class="card__body ">
+                        <ul class="list list--tick ">
+                            <li class="list__item ">Unlimited Websites</li>
+                            <li class="list__item ">Unlimited Bandwidth</li>
+                            <li class="list__item ">100 GB SSD Storage</li>
+                            <li class="list__item ">3 GB RAM</li>
                         </ul>
-                        <button class="btn btn--outline btn--block">Buy Now</button>
+                        <button class="btn btn--outline btn--block ">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -138,61 +139,61 @@
     <!-- end of PLANS BLOCK -->
 
     <!-- FEATURES BLOCK -->
-    <section class="block container">
-        <header class="block__header">
+    <section class="block container ">
+        <header class="block__header ">
             <h2>Host on the Cloud to Keep Growing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, distinctio.</p>
         </header>
-        <article class="grid grid--1x2 container feature">
-            <div class="feature__content">
-                <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#easy"></use>
+        <article class="grid grid--1x2 container feature ">
+            <div class="feature__content ">
+                <svg class="icon icon--primary ">
+                    <use xlink:href="images/sprite.svg#easy "></use>
                 </svg>
                 <h3>Super Easy to Use</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi in tenetur repudiandae molestiae cum, sequi impedit unde ullam veritatis.</p>
-                <a href="" class="link-arrow">Learn More</a>
+                <a href=" " class="link-arrow ">Learn More</a>
             </div>
             <div>
                 <picture>
-                    <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
-                    <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
-                    <img class="feature__image" src="images/easy@2x.jpg" alt="">
+                    <source type="image/webp " srcset="images/easy.webp 1x, images/easy@2x.webp 2x ">
+                    <source type="image/jpg " srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x ">
+                    <img class="feature__image " src="images/easy@2x.jpg " alt=" ">
                 </picture>
             </div>
         </article>
 
-        <article class="grid grid--1x2 container feature">
-            <div class="feature__content">
-                <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#computer"></use>
+        <article class="grid grid--1x2 container feature ">
+            <div class="feature__content ">
+                <svg class="icon icon--primary ">
+                    <use xlink:href="images/sprite.svg#computer "></use>
                 </svg>
                 <h3>Simply Fast Websites</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi in tenetur repudiandae molestiae cum, sequi impedit unde ullam veritatis.</p>
-                <a href="" class="link-arrow">Learn More</a>
+                <a href=" " class="link-arrow ">Learn More</a>
             </div>
             <div>
                 <picture>
-                    <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
-                    <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
-                    <img class="feature__image" src="images/fast@2x.jpg" alt="">
+                    <source type="image/webp " srcset="images/fast.webp 1x, images/fast@2x.webp 2x ">
+                    <source type="image/jpg " srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x ">
+                    <img class="feature__image " src="images/fast@2x.jpg " alt=" ">
                 </picture>
             </div>
         </article>
 
-        <article class="grid grid--1x2 container feature">
-            <div class="feature__content">
-                <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#wordpress"></use>
+        <article class="grid grid--1x2 container feature ">
+            <div class="feature__content ">
+                <svg class="icon icon--primary ">
+                    <use xlink:href="images/sprite.svg#wordpress "></use>
                 </svg>
                 <h3>Wordpress Made Easy</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi in tenetur repudiandae molestiae cum, sequi impedit unde ullam veritatis.</p>
-                <a href="" class="link-arrow">Learn More</a>
+                <a href=" " class="link-arrow ">Learn More</a>
             </div>
             <div>
                 <picture>
-                    <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
-                    <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
-                    <img class="feature__image" src="images/wordpress@2x.jpg" alt="">
+                    <source type="image/webp " srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x ">
+                    <source type="image/jpg " srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x ">
+                    <img class="feature__image " src="images/wordpress@2x.jpg " alt=" ">
                 </picture>
             </div>
         </article>
@@ -200,52 +201,52 @@
     <!-- end of FEATURES BLOCK -->
 
     <!-- SHOWCASE BLOCK -->
-    <section class="block block--dark block--skewed-right block-showcase">
-        <header class="block__header">
-            <h2 class="block__heading">User-Friendly Control Panel</h2>
+    <section class="block block--dark block--skewed-right block-showcase ">
+        <header class="block__header ">
+            <h2 class="block__heading ">User-Friendly Control Panel</h2>
         </header>
-        <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
-                <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
-                <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
-                <img src="images/ipad@2x.png" alt="control panel screenshot">
+        <div class="container grid grid--1x2 ">
+            <picture class="block-showcase__image ">
+                <source type="image/webp " srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x ">
+                <source type="image/png " srcset="images/ipad.png 1x, images/ipad@2x.png 2x ">
+                <img src="images/ipad@2x.png " alt="control panel screenshot ">
             </picture>
-            <ul class="list">
+            <ul class="list ">
                 <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#snap"></use>
+                    <div class="media ">
+                        <div class="media__image ">
+                            <svg class="icon icon--primary ">
+                                <use xlink:href="images/sprite.svg#snap "></use>
                             </svg>
                         </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Manage Updates</h3>
+                        <div class="media__body ">
+                            <h3 class="media__title ">Easy Start & Manage Updates</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis quia vero minus voluptas! Ipsam veniam natus debitis reiciendis inventore?</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
+                    <div class="media ">
+                        <div class="media__image ">
+                            <svg class="icon icon--primary ">
+                                <use xlink:href="images/sprite.svg#growth "></use>
                             </svg>
                         </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                        <div class="media__body ">
+                            <h3 class="media__title ">Staging, GIT & WP-CLI</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis quia vero minus voluptas! Ipsam veniam natus debitis reiciendis inventore?</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#wordpress"></use>
+                    <div class="media ">
+                        <div class="media__image ">
+                            <svg class="icon icon--primary ">
+                                    <use xlink:href="images/sprite.svg#wordpress "></use>
                                 </svg>
                         </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Dynamic Caching & More</h3>
+                        <div class="media__body ">
+                            <h3 class="media__title ">Dynamic Caching & More</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis quia vero minus voluptas! Ipsam veniam natus debitis reiciendis inventore?</p>
                         </div>
                     </div>
@@ -256,39 +257,39 @@
     <!-- end of SHOWCASE BLOCK -->
 
     <!-- TESTIMONIAL BLOCK -->
-    <section class="block">
-        <header class="block__header">
+    <section class="block ">
+        <header class="block__header ">
             <h2>What our Customers are Saying</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, natus!</p>
         </header>
-        <div class="container testimonial">
-            <div class="grid grid--1x2">
-                <div class="testimonial__image">
-                    <img src="images/testimonial.jpg" alt="A happy, smiling customer">
-                    <span class="icon-container icon-container--accent">
-                        <svg class="icon icon--primary icon--white icon--small">
-                            <use xlink:href="images/sprite.svg#quotes">"</use>
-                        </svg>
-                    </span>
-                </div>
-                <blockquote class="quote">
-                    <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error officia quam beatae facere, commodi esse enim dolores maxime adipisci.</p>
-                    <footer>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary quote__line">
+        <div class="container testimonial ">
+            <div class="grid grid--1x2 ">
+                <div class="testimonial__image ">
+                    <img src="images/testimonial.jpg " alt="A happy, smiling customer ">
+                    <span class="icon-container icon-container--accent ">
+                        <svg class="icon icon--primary icon--white icon--small ">
+                            <use xlink:href="images/sprite.svg#quotes ">"</use>
+            </svg>
+            </span>
+            </div>
+            <blockquote class="quote">
+                <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error officia quam beatae facere, commodi esse enim dolores maxime adipisci.</p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary quote__line">
                                         <use xlink:href="images/sprite.svg#line"></use>
                                     </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title quote__author">John Smith</h3>
-                                <p class="quote__company">ABC Company</p>
-                            </div>
                         </div>
-                    </footer>
-                </blockquote>
+                        <div class="media__body">
+                            <h3 class="media__title quote__author">John Smith</h3>
+                            <p class="quote__company">ABC Company</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
             </div>
-        </div>
+            </div>
     </section>
     <!-- end of TESTIMONIAL BLOCK -->
 
@@ -392,11 +393,12 @@
     <!-- end of FOOTER -->
 
 
-
+    <!-- SCRIPTS -->
     <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
-
-
 
 </html>
