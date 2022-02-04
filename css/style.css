@@ -564,6 +564,8 @@ a {
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    transform: translateY(40px);
+    margin-bottom: 1rem;
 }
 
 .callout--primary {
@@ -828,6 +830,7 @@ a {
     }
     .block-showcase__image {
         justify-self: end;
+        align-self: center;
     }
     .block-showcase__image>img {
         width: auto;
